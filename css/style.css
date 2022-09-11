@@ -1,0 +1,855 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*---------------------------------------------HEADER---------------------------------------------*/
+.header{
+    background-color: #82449d;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.headerImg{
+    padding: 2%;
+}
+
+.headerNav ul{
+	list-style-type: none;
+    display: flex;
+    margin-left: 20%;
+}
+
+.headerNav ul li {
+    align-content: space-around;
+    padding: 20%;
+}
+
+.headerNav ul li a{
+    padding: 10%; 
+    color: white;
+    font-family: Arial;
+    text-decoration: none
+}
+/*---------------------------------------------HEADER---------------------------------------------*/
+
+/*-----------------------------------------SOBRE NOSOTROS-----------------------------------------*/
+#nosotros h2{
+    color: white;
+    font-family: Arial;
+    font-size:xx-large;
+    background-color: #82449d;
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+.nosotrosQuienesSomos{
+    background-color: #FFEBD6;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+}
+
+.quienesSomosTxt{
+    flex-direction: column;
+    margin: 5%;
+    text-align: center;
+}
+
+.quienesSomosTxt h3{
+    padding: 1%;
+    font-size: large;
+}
+.quienesSomosTxt p{
+    padding: 1%;
+    font-size: medium;
+}
+
+.trayectoriaTxt{
+    flex-direction: column;
+    margin: 5%;
+    text-align: center;
+}
+
+.trayectoriaTxt h3{
+    padding: 1%;
+    font-size: large;
+}
+.trayectoriaTxt p{
+    padding: 1%;
+    font-size: medium;
+}
+
+.nosotrosQuienesSomos img{
+    height: 300px;
+    width: 500px;
+    padding: 2%;
+}
+
+.nosotrosTrayectoria{
+    margin-top: 5%;
+    background-color: #FFEBD6;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+}
+
+.nosotrosTrayectoria img{
+    height: 300px;
+    width: 500px;
+    padding: 2%;
+}
+/*-----------------------------------------SOBRE NOSOTROS-----------------------------------------*/
+
+/*----------------------------------------CONOCENOS (INDEX)---------------------------------------*/
+.conocenos{
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img1 img2 img3"
+    "txt1 txt2 txt3";
+}
+
+.conocenosImg1{
+    grid-area: img1;
+    height: 300px;
+    width: 420px;
+    padding-top: 8%;
+}
+.conocenosImg2{
+    grid-area: img2;
+    height: 300px;
+    width: 420px;
+    padding-top: 8%;
+}
+.conocenosImg3{
+    grid-area: img3;
+    height: 300px;
+    width: 420px;
+    padding-top: 8%;
+}
+
+.conocenosTexto1{
+    grid-area: txt1;
+    text-align: center;
+
+}
+.conocenosTexto1 h3{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: large;
+}
+.conocenosTexto1 p{
+    margin-bottom: 3%;
+    font-size: medium;
+}
+
+.conocenosTexto2{
+    grid-area: txt2;
+    text-align: center;
+}
+.conocenosTexto2 h3{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: large;
+}
+.conocenosTexto2 p{
+    margin-bottom: 3%;
+    font-size: medium;
+}
+
+.conocenosTexto3{
+    grid-area: txt3;
+    text-align: center;
+}
+.conocenosTexto3 h3{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: large;
+}
+.conocenosTexto3 p{
+    margin-bottom: 3%;
+    font-size: medium;
+}
+/*----------------------------------------CONOCENOS (INDEX)---------------------------------------*/
+
+/*-------------------------------------------APLICACION-------------------------------------------*/
+.presentacion{
+    text-align: center;
+    font-family: Arial;
+}
+
+.presentacion img{
+    width: 100%;
+}
+
+.presentacion h2{
+    font-size: xx-large;
+    background-color: #82449d;
+    color: white;
+    margin: 3%;
+    padding: 1%;
+    margin-left:30%;
+    margin-right:30%; 
+}
+
+.presentacion p{
+    background-color: #FFEBD6;
+    margin: 3%;
+    font-size: medium;
+    padding: 2%;
+}
+
+.productos{
+    text-align: center;
+    font-family: Arial;
+}
+
+.productosCosmetica img{
+    margin-bottom: 2%;
+}
+.productosCosmetica h3{
+    font-size: large;
+    margin-bottom: 2%;
+}
+.productosCosmetica p{
+    font-size: medium;
+    margin-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.productosFinas img{
+    margin-bottom: 2%;
+}
+.productosFinas h3{
+    font-size: large;
+    margin-bottom: 2%;
+}
+.productosFinas p{
+    font-size: medium;
+    margin-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.productosHogar img{
+    margin-bottom: 2%;
+}
+.productosHogar h3{
+    font-size: large;
+    margin-bottom: 2%;
+}
+
+.productosHogar p{
+    font-size: medium;
+    margin-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/*-------------------------------------------APLICACION-------------------------------------------*/
+
+/*-------------------------------------------EXPERIENCIA------------------------------------------*/
+.titulo img{
+    width: 100%;
+}
+
+.titulo h2{
+    font-family: Arial;
+    font-size: xx-large;
+    text-align: center;
+    background-color: #82449d;
+    color: white;
+    margin: 3%;
+    padding: 1%;
+    margin-left:30%;
+    margin-right:30%; 
+}
+
+.experiencia{
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4";
+}
+
+.experiencia1{
+    grid-area: div1;
+    background-color: #FFEBD6;
+    margin: 5%;
+    text-align: center;
+    border: #82449d solid 3px;
+}
+.experiencia1 img{
+    padding: 2%;
+    width: 50%;
+    height: 50%;
+}
+.experiencia1 h3{
+    background-color: #82449d;
+    color: white;
+    padding: 1%;
+    margin: 0;
+    font-size: large;
+}
+.experiencia1 p{
+    padding: 2%;
+    font-size: medium;
+}
+
+.experiencia2{
+    grid-area: div2;
+    background-color: #FFEBD6;
+    margin: 5%;
+    text-align: center;
+    border: #82449d solid 3px;
+}
+.experiencia2 img{
+    padding: 2%;
+    width: 50%;
+    height: 50%;
+
+}
+.experiencia2 h3{
+    background-color: #82449d;
+    color: white;
+    padding: 1%;
+    margin: 0;
+    font-size: large;
+}
+.experiencia2 p{
+    padding: 2%;
+    font-size: medium;
+}
+
+.experiencia3{
+    grid-area: div3;
+    background-color: #FFEBD6;
+    margin: 5%;
+    text-align: center;
+    border: #82449d solid 3px;
+}
+.experiencia3 img{
+    padding: 2%;
+    width: 50%;
+    height: 50%;
+
+}
+.experiencia3 h3{
+    background-color: #82449d;
+    color: white;
+    padding: 1%;
+    margin: 0;
+    font-size: large;
+}
+.experiencia3 p{
+    padding: 2%;
+    font-size: medium;
+}
+
+.experiencia4{
+    grid-area: div4;
+    background-color: #FFEBD6;
+    margin: 5%;
+    text-align: center;
+    border: #82449d solid 3px;
+}
+.experiencia4 img{
+    padding: 2%;
+    width: 50%;
+    height: 50%;
+
+}
+.experiencia4 h3{
+    background-color: #82449d;
+    color: white;
+    padding: 1%;
+    margin: 0;
+    font-size: large;
+}
+.experiencia4 p{
+    padding: 2%;
+    font-size: medium;
+}
+/*-------------------------------------------EXPERIENCIA------------------------------------------*/
+
+/*--------------------------------------------CONTACTO--------------------------------------------*/
+.contactoTitulo img{
+    width: 100%;
+    margin-bottom: 3%;
+}
+.contactoTitulo h2{
+    background-color: #82449d;
+    color: white;
+    font-size: xx-large;
+    font-family: Arial;
+    padding: 1%;
+    margin-right: 70%;
+    margin-bottom: 1%;
+}
+.contactoTitulo p{
+    background-color: #FFEBD6;
+    font-size: medium;
+    font-family: Arial;
+    padding: 2%;
+    margin-right: 50%;
+    margin-bottom: 4%;
+}
+
+.contacto{
+    font-family: Arial;
+    font-size: medium;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.contactoFormulario{
+    margin-right: 3%;
+    margin-left: 2%;
+}
+
+.contactoDatos{
+    display:inline-block;
+    font-family: Arial;
+    width: 40%;
+    background-color: #FFEBD6;
+    padding: 2%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-right: 3%;
+}
+.contactoDireccion p{
+    font-size: medium;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contactoDireccionTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.contactoDireccionTitulo img{
+    height: 5%;
+    width: 5%;
+}
+
+.contactoDireccionTitulo h3{
+    font-size: larger;
+    margin: 1%;
+}
+
+.contactoTelefono p{
+    font-size: medium;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contactoTelefonoTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.contactoTelefonoTitulo img{
+    height: 5%;
+    width: 5%;
+}
+
+.contactoTelefonoTitulo h3{
+    font-size: larger;
+    margin: 1%;
+}
+
+.contactoWpp p{
+    font-size: medium;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contactoWppTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.contactoWppTitulo img{
+    height: 5%;
+    width: 5%;
+}
+
+.contactoWppTitulo h3{
+    font-size: larger;
+    margin: 1%;
+}
+
+.contactoMail p{
+    font-size: medium;
+    padding: 1%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contactoMailTitulo{
+    display: flex;
+    justify-content: center;
+}
+
+.contactoMailTitulo img{
+    height: 5%;
+    width: 5%;
+}
+
+.contactoMailTitulo h3{
+    font-size: larger;
+    margin: 1%;
+}
+
+.contactoRedes ul{
+    list-style-type: none;
+    display:flex;
+}
+
+.contactoRedes ul li{
+    height: 25%;
+    width: 25%;
+    margin-left: 6%;
+}
+
+.contactoRedes ul li img{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.atencion iframe{
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.atencionHorario{
+    text-align: center;
+    font-family: Arial;
+}
+
+.atencionHorario h3{
+    background-color: #82449d;
+    color: white;
+    font-size: x-large;
+    font-family: Arial;
+    padding: 1%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 1%;
+}
+
+.atencionHorario p{
+    background-color: #FFEBD6;
+    font-size: medium;
+    font-family: Arial;
+    padding: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 4%;
+}
+/*--------------------------------------------CONTACTO--------------------------------------------*/
+
+/*--------------------------------------------FOOTER----------------------------------------------*/
+.footer{
+    background-color: #000003;
+    color: white;
+    font-family: Arial;
+    display: flex;
+    align-content: space-between;
+}
+
+.footerImg{
+    height: 90%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 8%;
+}
+
+.footerInformacion{
+    margin-right: 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.footerInformacion h4{
+    font-size: medium;
+    margin-left: 35%;
+    margin-bottom: 20%;
+}
+
+.footerInformacion ul{
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 35%;
+}
+
+.footerInformacion ul li{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.footerInformacion ul li a{
+    text-decoration: none;
+    font-family: Arial;
+    color: white;
+    font-size: small;
+}
+
+.footerContacto{
+    margin-right: 8%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.footerContacto h4{
+    font-size: medium;
+    margin-bottom: 10%;
+}
+
+.footerContacto ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footerContacto ul li{
+    display: flex;
+    text-decoration: none;
+    font-family: Arial;
+    color: white;
+    font-size: small;
+    margin-bottom: 5%;
+}
+
+.footerDireccion{
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.footerDireccion h4{
+    font-size: medium;
+    margin-bottom: 10%;
+}
+
+.footerDireccion p{
+    font-size: small;
+}
+
+.footerHorario{
+    margin-right: 8%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.footerHorario h4{
+    font-size: medium;
+    margin-bottom: 10%;
+}
+
+.footerHorario p{
+    font-size: small;
+}
+
+.footerRedes{
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+.footerRedes ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footerRedes ul li a{
+    padding: 10%;
+    color: white;
+    font-size: 25px;
+}
+
+.fa-brands{
+    width: 40px;
+    height: 40px;
+}
+/*--------------------------------------------FOOTER----------------------------------------------*/
+
+/*----------------------------------------MEDIDA QUERIES------------------------------------------*/
+@media only screen and (max-width: 768px){ /*tablet*/
+    
+}
+
+@media only screen and (max-width: 576px){ /*celular*/
+
+    /*header*/
+    .header{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .headerNav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    /*header*/
+
+    /*sobre nosotros*/
+    #nosotros h2 {
+        text-align: center;
+    }
+
+    .nosotrosQuienesSomos{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .nosotrosQuienesSomos img{
+        margin-bottom: 3%;
+    }
+
+    .nosotrosTrayectoria{
+        flex-direction: column-reverse;
+        justify-items: center;
+    }
+    .nosotrosTrayectoria img{
+        margin-bottom: 3%;
+    }
+    /*sobre nosotros*/
+
+    /*index*/
+    .conocenos{
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "img1"
+        "txt1"
+        "img2"
+        "txt2"
+        "img3"
+        "txt3";
+    }
+
+    .conocenosTexto1 p{
+        padding: 5%;
+    }
+    .conocenosTexto2 p{
+        padding: 5%;
+    }
+    .conocenosTexto3 p{
+        padding: 5%;
+    }
+    /*index*/
+
+    /*aplicacion*/
+    /*aplicacion*/
+    
+    /*experiencia*/
+    .experiencia{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "div1"
+        "div2"
+        "div3"
+        "div4";
+    }
+
+    .experiencia p{
+        font-size: small;
+    }
+    /*experiencia*/
+
+    /*contacto*/
+    .contactoTitulo h2{
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contactoTitulo p{
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .contacto{
+        flex-direction: column;
+    }
+
+    .contactoFormulario{
+        display: flex;
+        margin: 0;
+        justify-content: center;
+    }
+    .contactoFormulario img{
+        height: 500px;
+        width: 90%;
+    }
+
+    .contactoDatos{
+        width: 90%;
+        margin-left: 3%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    /*contacto*/
+
+    /*footer*/
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footerInformacion{
+        display: none;
+    }
+    .footerImg{
+        display: none;
+    }
+    .footerContacto{
+        margin-right: 0;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        justify-content: center;
+    }
+    .footerContacto h4{
+        margin-bottom: 3%;
+    }
+    .footerContactoMenu{
+        display: flex;
+        justify-content: center;
+    }
+    .footerContactoMenu ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerDireccion{
+        margin-right: 0;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .footerDireccion h4{
+        margin-bottom: 3%;
+    }
+    .footerHorario{
+        margin-right: 0;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .footerHorario h4{
+        margin-bottom: 3%;
+    }
+    /*footer*/
+
+}
+/*----------------------------------------MEDIDA QUERIES------------------------------------------*/
