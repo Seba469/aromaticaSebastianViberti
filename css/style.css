@@ -4,99 +4,109 @@
 }
 /*---------------------------------------------HEADER---------------------------------------------*/
 .header{
-    background-color: #82449d;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 5%;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(196,54,244,1) 50%, rgba(131,58,180,1) 100%);
+    margin-bottom: 3%;
 }
 
 .headerImg{
-    padding: 2%;
+    height: 50%;
+    width: 25%;
+}
+
+.headerNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .headerNav ul{
-	list-style-type: none;
     display: flex;
-    margin-left: 20%;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
 }
 
-.headerNav ul li {
-    align-content: space-around;
-    padding: 20%;
+.headerNav ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.headerNav ul li:hover{
+    transform: scale(1.5);
 }
 
 .headerNav ul li a{
-    padding: 10%; 
+    padding: 5%;
+    text-decoration: none;
     color: white;
-    font-family: Arial;
-    text-decoration: none
+    font-family: Arial;    
 }
 /*---------------------------------------------HEADER---------------------------------------------*/
 
 /*-----------------------------------------SOBRE NOSOTROS-----------------------------------------*/
-#nosotros h2{
-    color: white;
-    font-family: Arial;
-    font-size:xx-large;
+#nosotros{
     background-color: #82449d;
-    padding: 1%;
-    margin-bottom: 3%;
+    font-family: Arial;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#nosotros h2{
+    font-size: 500%;
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 2%;
 }
 
 .nosotrosQuienesSomos{
-    background-color: #FFEBD6;
-    font-family: Arial;
     display: flex;
     align-items: center;
-}
-
-.quienesSomosTxt{
-    flex-direction: column;
-    margin: 5%;
     text-align: center;
-}
-
-.quienesSomosTxt h3{
-    padding: 1%;
-    font-size: large;
-}
-.quienesSomosTxt p{
-    padding: 1%;
-    font-size: medium;
-}
-
-.trayectoriaTxt{
-    flex-direction: column;
-    margin: 5%;
-    text-align: center;
-}
-
-.trayectoriaTxt h3{
-    padding: 1%;
-    font-size: large;
-}
-.trayectoriaTxt p{
-    padding: 1%;
-    font-size: medium;
 }
 
 .nosotrosQuienesSomos img{
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
+    margin: 2%;
+    border-radius: 5%;
+}
+
+
+.quienesSomosTxt{
+    padding: 2%;
+}
+
+.quienesSomosTxt p{
     padding: 2%;
 }
 
 .nosotrosTrayectoria{
-    margin-top: 5%;
-    background-color: #FFEBD6;
-    font-family: Arial;
     display: flex;
     align-items: center;
+    text-align: center;
+    margin-bottom: 2%;
 }
 
 .nosotrosTrayectoria img{
-    height: 300px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
+    margin: 2%;
+    border-radius: 5%;
+}
+
+.trayectoriaTxt{
+    padding: 2%;
+}
+.trayectoriaTxt p{
     padding: 2%;
 }
 /*-----------------------------------------SOBRE NOSOTROS-----------------------------------------*/
