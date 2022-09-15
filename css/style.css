@@ -23,7 +23,6 @@
     align-items: center;
     width: 90%;
     margin-top: 2%;
-    margin-bottom: 2%;
 }
 
 .headerNav ul{
@@ -50,6 +49,16 @@
     font-family: Arial;    
 }
 /*---------------------------------------------HEADER---------------------------------------------*/
+
+/*-------------------Carousel index-------------------*/
+.carouselInicio{
+    margin-bottom: 3%;
+}
+
+.carouselImg img{
+    height: 550px;
+}
+/*-------------------Carousel index-------------------*/
 
 /*-----------------------------------------SOBRE NOSOTROS-----------------------------------------*/
 #nosotros{
@@ -113,7 +122,11 @@
 
 /*----------------------------------------CONOCENOS (INDEX)---------------------------------------*/
 .conocenos{
+    padding-bottom: 5%;
+    background: rgb(0,0,3);
+    background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(130,68,157,1) 82%);
     font-family: Arial;
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -152,7 +165,7 @@
     font-size: large;
 }
 .conocenosTexto1 p{
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     font-size: medium;
 }
 
@@ -166,7 +179,7 @@
     font-size: large;
 }
 .conocenosTexto2 p{
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     font-size: medium;
 }
 
@@ -180,84 +193,49 @@
     font-size: large;
 }
 .conocenosTexto3 p{
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     font-size: medium;
 }
 /*----------------------------------------CONOCENOS (INDEX)---------------------------------------*/
 
 /*-------------------------------------------APLICACION-------------------------------------------*/
-.presentacion{
+
+.tituloPresentacion{
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: white;
     text-align: center;
     font-family: Arial;
+    background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../imagenes/imagenTitulo.jpg);
 }
 
-.presentacion img{
-    width: 100%;
-}
-
-.presentacion h2{
-    font-size: xx-large;
+.tituloPresentacion h2{
     background-color: #82449d;
-    color: white;
-    margin: 3%;
-    padding: 1%;
-    margin-left:30%;
-    margin-right:30%; 
+    font-size: 300%;
+    padding: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .presentacion p{
     background-color: #FFEBD6;
-    margin: 3%;
-    font-size: medium;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 3%;
+    font-size: 120%;
     padding: 2%;
 }
 
 .productos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+}
+
+.productoTexto{
     text-align: center;
-    font-family: Arial;
-}
-
-.productosCosmetica img{
-    margin-bottom: 2%;
-}
-.productosCosmetica h3{
-    font-size: large;
-    margin-bottom: 2%;
-}
-.productosCosmetica p{
-    font-size: medium;
-    margin-bottom: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.productosFinas img{
-    margin-bottom: 2%;
-}
-.productosFinas h3{
-    font-size: large;
-    margin-bottom: 2%;
-}
-.productosFinas p{
-    font-size: medium;
-    margin-bottom: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.productosHogar img{
-    margin-bottom: 2%;
-}
-.productosHogar h3{
-    font-size: large;
-    margin-bottom: 2%;
-}
-
-.productosHogar p{
-    font-size: medium;
-    margin-bottom: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 /*-------------------------------------------APLICACION-------------------------------------------*/
 
@@ -572,123 +550,83 @@
 
 /*--------------------------------------------FOOTER----------------------------------------------*/
 .footer{
+    padding-top: 3%;
     background-color: #000003;
     color: white;
     font-family: Arial;
     display: flex;
-    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+.footerInf{
+    width: 10%;
+}
+.footerInf h4{
+    font-size:120%;
+}
+.footerInf ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footerInf ul li{
+    padding: 1%;
+}
+.footerInf ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 90%;
+}
+
+.footerCont{
+    width: 20%;
+}
+.footerCont h4{
+    font-size:120%;
+}
+.footerCont ul{
+    list-style: none;
+    padding: 0;
+}
+.footerCont ul li{
+    padding: 1%;    
+}
+.footerCont ul li a{
+    text-decoration: none;
+    font-size: 90%;
+}
+
+.footerDirHor{
+    width: 20%;
+}
+.footerDirHor h4{
+    font-size:120%;
+}
+.footerDirHor p{
+    font-size: 90%;
 }
 
 .footerImg{
-    height: 90%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    margin-right: 8%;
-}
-
-.footerInformacion{
-    margin-right: 10%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-
-.footerInformacion h4{
-    font-size: medium;
-    margin-left: 35%;
-    margin-bottom: 20%;
-}
-
-.footerInformacion ul{
-    list-style-type: none;
-    text-decoration: none;
-    margin-left: 35%;
-}
-
-.footerInformacion ul li{
-    display: flex;
-    margin-bottom: 5%;
-}
-
-.footerInformacion ul li a{
-    text-decoration: none;
-    font-family: Arial;
-    color: white;
-    font-size: small;
-}
-
-.footerContacto{
-    margin-right: 8%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-
-.footerContacto h4{
-    font-size: medium;
-    margin-bottom: 10%;
-}
-
-.footerContacto ul{
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.footerContacto ul li{
-    display: flex;
-    text-decoration: none;
-    font-family: Arial;
-    color: white;
-    font-size: small;
-    margin-bottom: 5%;
-}
-
-.footerDireccion{
-    margin-right: 4%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-
-.footerDireccion h4{
-    font-size: medium;
-    margin-bottom: 10%;
-}
-
-.footerDireccion p{
-    font-size: small;
-}
-
-.footerHorario{
-    margin-right: 8%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
-
-.footerHorario h4{
-    font-size: medium;
-    margin-bottom: 10%;
-}
-
-.footerHorario p{
-    font-size: small;
+    height: 150px;
 }
 
 .footerRedes{
-    margin-top: 5%;
-    margin-bottom: 4%;
+    display: flex;
 }
 .footerRedes ul{
-    list-style-type: none;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;  
+    list-style: none;
+    padding: 0;
+  
 }
 
 .footerRedes ul li a{
-    padding: 10%;
+    text-decoration: none;
     color: white;
-    font-size: 25px;
-}
-
-.fa-brands{
-    width: 40px;
-    height: 40px;
+    font-size: 150%;
 }
 /*--------------------------------------------FOOTER----------------------------------------------*/
 
