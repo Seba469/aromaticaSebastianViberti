@@ -15,6 +15,8 @@
 .headerImg{
     height: 50%;
     width: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .headerNav{
@@ -80,6 +82,7 @@
     display: flex;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .nosotrosQuienesSomos img{
@@ -92,7 +95,12 @@
 
 .quienesSomosTxt{
     padding: 2%;
+    margin-left: 1%;
+    background:  linear-gradient(90deg, rgba(130,68,157,1) 0%, rgba(46,3,64,1) 0%, rgba(42,0,60,1) 65%, rgba(130,68,157,1) 100%);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
+
 
 .quienesSomosTxt p{
     padding: 2%;
@@ -103,6 +111,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 2%;
+    overflow: hidden;
 }
 
 .nosotrosTrayectoria img{
@@ -114,6 +123,10 @@
 
 .trayectoriaTxt{
     padding: 2%;
+    margin-right: 1%;
+    background:  linear-gradient(90deg, rgba(130,68,157,1) 0%, rgba(46,3,64,1) 35%, rgba(42,0,60,1) 100%, rgba(130,68,157,1) 100%);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 .trayectoriaTxt p{
     padding: 2%;
@@ -127,6 +140,7 @@
     background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(130,68,157,1) 82%);
     font-family: Arial;
     color: white;
+    overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -138,19 +152,19 @@
 .conocenosImg1{
     grid-area: img1;
     height: 300px;
-    width: 420px;
+    width: 100%;
     padding-top: 8%;
 }
 .conocenosImg2{
     grid-area: img2;
     height: 300px;
-    width: 420px;
+    width: 100%;
     padding-top: 8%;
 }
 .conocenosImg3{
     grid-area: img3;
     height: 300px;
-    width: 420px;
+    width: 100%;
     padding-top: 8%;
 }
 
@@ -229,11 +243,16 @@
 }
 
 .productos{
+    background:linear-gradient(0deg, rgba(0,0,3,1) 5%, rgba(255,255,255,1) 30%);
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3%;
+    padding-bottom: 1%;
 }
 
+.cartaProductos{
+    margin-bottom: 5%;
+    width: 30%;
+}
 .productoTexto{
     text-align: center;
 }
@@ -367,158 +386,84 @@
 /*-------------------------------------------EXPERIENCIA------------------------------------------*/
 
 /*--------------------------------------------CONTACTO--------------------------------------------*/
-.contactoTitulo img{
-    width: 100%;
-    margin-bottom: 3%;
-}
-.contactoTitulo h2{
-    background-color: #82449d;
-    color: white;
-    font-size: xx-large;
-    font-family: Arial;
-    padding: 1%;
-    margin-right: 70%;
-    margin-bottom: 1%;
-}
-.contactoTitulo p{
-    background-color: #FFEBD6;
-    font-size: medium;
-    font-family: Arial;
-    padding: 2%;
-    margin-right: 50%;
-    margin-bottom: 4%;
-}
-
 .contacto{
-    font-family: Arial;
-    font-size: medium;
     display: flex;
-    margin-bottom: 5%;
-}
-
-.contactoFormulario{
-    margin-right: 3%;
-    margin-left: 2%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+    font-family: Arial;
 }
 
 .contactoDatos{
-    display:inline-block;
-    font-family: Arial;
-    width: 40%;
-    background-color: #FFEBD6;
-    padding: 2%;
-    margin-top: 15%;
-    margin-bottom: 15%;
-    margin-right: 3%;
-}
-.contactoDireccion p{
-    font-size: medium;
-    padding: 1%;
-    text-align: center;
-    margin-bottom: 5%;
+    background: #FFEBD6;
+    padding: 5%;
+    width: 35%;
 }
 
-.contactoDireccionTitulo{
+.datos{
+    padding: 3%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #000000;
 }
 
-.contactoDireccionTitulo img{
-    height: 5%;
-    width: 5%;
-}
-
-.contactoDireccionTitulo h3{
-    font-size: larger;
-    margin: 1%;
-}
-
-.contactoTelefono p{
-    font-size: medium;
-    padding: 1%;
+.datos p{
+    padding: 3%;
+    font-size: 100%;
     text-align: center;
-    margin-bottom: 5%;
+    font-weight: 500;
 }
 
-.contactoTelefonoTitulo{
+.titulosDatos{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    font-size: 200%;
 }
 
-.contactoTelefonoTitulo img{
-    height: 5%;
-    width: 5%;
+.titulosDatos h3{
+    margin-bottom: 0;
+    margin-left: 10%;
+    font-size: 110%;
+    font-weight: bolder;
 }
 
-.contactoTelefonoTitulo h3{
-    font-size: larger;
-    margin: 1%;
-}
 
-.contactoWpp p{
-    font-size: medium;
-    padding: 1%;
-    text-align: center;
-    margin-bottom: 5%;
+.contactoRedes{
+    margin-top: 3%;
+    padding-top: 3%;
 }
-
-.contactoWppTitulo{
-    display: flex;
-    justify-content: center;
-}
-
-.contactoWppTitulo img{
-    height: 5%;
-    width: 5%;
-}
-
-.contactoWppTitulo h3{
-    font-size: larger;
-    margin: 1%;
-}
-
-.contactoMail p{
-    font-size: medium;
-    padding: 1%;
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.contactoMailTitulo{
-    display: flex;
-    justify-content: center;
-}
-
-.contactoMailTitulo img{
-    height: 5%;
-    width: 5%;
-}
-
-.contactoMailTitulo h3{
-    font-size: larger;
-    margin: 1%;
-}
-
 .contactoRedes ul{
-    list-style-type: none;
-    display:flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    font-size: 350%;
 }
 
 .contactoRedes ul li{
-    height: 25%;
-    width: 25%;
-    margin-left: 6%;
+    transition: all 0.5s;
+}
+.contactoRedes ul li a{
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+
 }
 
-.contactoRedes ul li img{
+.contactoRedes ul li:hover{
+    transform: scale(1.5);
+}
+.atencion{
     display: flex;
-    height: 100%;
-    width: 100%;
+    flex-direction: column;
 }
-
 .atencion iframe{
     width: 100%;
-    margin-bottom: 4%;
+    padding-bottom: 4%;
+    margin: 0;
+    background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(255,255,255,1) 13%);
 }
 
 .atencionHorario{
@@ -529,8 +474,7 @@
 .atencionHorario h3{
     background-color: #82449d;
     color: white;
-    font-size: x-large;
-    font-family: Arial;
+    font-size: 250%;
     padding: 1%;
     margin-left: 35%;
     margin-right: 35%;
@@ -539,13 +483,14 @@
 
 .atencionHorario p{
     background-color: #FFEBD6;
-    font-size: medium;
-    font-family: Arial;
+    font-size: 110%;
+    font-weight: 500;
     padding: 1%;
     margin-left: 25%;
     margin-right: 25%;
     margin-bottom: 4%;
 }
+
 /*--------------------------------------------CONTACTO--------------------------------------------*/
 
 /*--------------------------------------------FOOTER----------------------------------------------*/
@@ -571,7 +516,12 @@
 
 .footerInf ul li{
     padding: 1%;
+    transition: all 0.5;
 }
+.footerInf ul li:hover{
+    transform: scale(1.25);
+}
+
 .footerInf ul li a{
     text-decoration: none;
     color: white;
@@ -623,18 +573,23 @@
   
 }
 
+.footerRedes ul li{
+    transition: all 0,5;
+}
+
+.footerRedes ul li:hover{
+    transform: scale(1.5);
+}
+
 .footerRedes ul li a{
     text-decoration: none;
     color: white;
     font-size: 150%;
+    cursor: pointer;
 }
 /*--------------------------------------------FOOTER----------------------------------------------*/
 
 /*----------------------------------------MEDIDA QUERIES------------------------------------------*/
-@media only screen and (max-width: 768px){ /*tablet*/
-    
-}
-
 @media only screen and (max-width: 576px){ /*celular*/
 
     /*header*/
@@ -643,15 +598,25 @@
         flex-direction: column;
     }
     
+    .headerImg{
+        width: 40%;
+    }
     .headerNav ul{
         flex-direction: column;
         align-items: center;
     }
     /*header*/
 
+    /*carousel*/
+    .carouselImg{
+        height:300px;
+    }
+    /*carousel*/
+    
     /*sobre nosotros*/
     #nosotros h2 {
         text-align: center;
+        font-size: 350%;
     }
 
     .nosotrosQuienesSomos{
@@ -661,6 +626,11 @@
     .nosotrosQuienesSomos img{
         margin-bottom: 3%;
     }
+    .quienesSomosTxt{
+        margin-left: 0;
+        border-radius: 0;
+        background: linear-gradient(90deg, rgba(130,68,157,1) 0%, rgba(46,3,64,1) 10%, rgba(42,0,60,1) 90%, rgba(130,68,157,1) 100%);
+    }
 
     .nosotrosTrayectoria{
         flex-direction: column-reverse;
@@ -668,6 +638,11 @@
     }
     .nosotrosTrayectoria img{
         margin-bottom: 3%;
+    }
+    .trayectoriaTxt{
+        margin-right: 0;
+        border-radius: 0;
+        background: linear-gradient(90deg, rgba(130,68,157,1) 0%, rgba(46,3,64,1) 10%, rgba(42,0,60,1) 90%, rgba(130,68,157,1) 100%);
     }
     /*sobre nosotros*/
 
@@ -697,6 +672,22 @@
     /*index*/
 
     /*aplicacion*/
+    .tituloPresentacion h2{
+        font-size: 250%;
+    }
+
+    .presentacion p{
+        font-size: 100%;
+    }
+
+    .productos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartaProductos{
+        width: 60%;
+    }
     /*aplicacion*/
     
     /*experiencia*/
@@ -716,17 +707,6 @@
     /*experiencia*/
 
     /*contacto*/
-    .contactoTitulo h2{
-        text-align: center;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .contactoTitulo p{
-        text-align: center;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
     .contacto{
         flex-direction: column;
     }
@@ -747,6 +727,22 @@
         margin-bottom: 5%;
         margin-top: 5%;
     }
+
+    .titulosDatos{
+        font-size: 150%;
+        margin-left: 20%;
+    }
+    .titulosDatos h3{
+        font-size: 100%;
+    }
+
+    .atencionHorario h3{
+        font-size: 200%;
+    }
+
+    .atencionHorario p{
+        font-size: 100%;
+    }
     /*contacto*/
 
     /*footer*/
@@ -756,46 +752,17 @@
         text-align: center;
     }
 
-    .footerInformacion{
+    .footerInf{
         display: none;
     }
     .footerImg{
         display: none;
     }
-    .footerContacto{
-        margin-right: 0;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        justify-content: center;
+    .footerCont{
+        width: 60%;
     }
-    .footerContacto h4{
-        margin-bottom: 3%;
-    }
-    .footerContactoMenu{
-        display: flex;
-        justify-content: center;
-    }
-    .footerContactoMenu ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footerDireccion{
-        margin-right: 0;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-    .footerDireccion h4{
-        margin-bottom: 3%;
-    }
-    .footerHorario{
-        margin-right: 0;
-        margin-top: 2%;
-        margin-bottom: 2%;
-    }
-    .footerHorario h4{
-        margin-bottom: 3%;
+    .footerDirHor{
+        width: 60%;
     }
     /*footer*/
 

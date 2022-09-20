@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/7b0e1cd8e1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> <!--Vinculado a BS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--Vinculado con AOS-->
     <link rel="stylesheet" href="../css/style.css"><!--Vinculado a CSS  -->
     <link rel="shortcut icon" href="../imagenes/logoChico.png">
     <title>Aromatica</title>
@@ -26,9 +27,10 @@
         </nav>
     </header>
 
-    <section class="titulo">
-        <img src="../imagenes/imagenTitulo.jpg">
-        <h2>Experiencia</h2>
+    <section class="presentacion">
+        <div class="tituloPresentacion">
+            <h2>Experiencia</h2>
+        </div>
     </section>
 
     <section class="experiencia">
@@ -99,6 +101,11 @@
             </ul>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script><!--Vinculado AOS-->
+    <script>                                                      
+        AOS.init();                                               
+    </script> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> <!--Vinculado a BS  -->
 </body>
