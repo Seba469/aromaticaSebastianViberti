@@ -1,0 +1,50 @@
+/*EXPERIENCIA*/
+.experiencia{
+    font-family: Arial;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4";
+
+    .expFondo{
+        background-color: #FFEBD6;
+        margin: 5%;
+        text-align: center;
+        border: #82449d solid 3px;
+    }
+
+    img{
+        padding: 2%;
+        width: 50%;
+        height: 50%;
+    }
+
+    h3{
+        background-color: #82449d;
+        color: white;
+        padding: 1%;
+        margin: 0;
+        font-size: large;
+    }
+
+    p{
+        padding: 2%;
+        font-size: medium;
+    }
+
+    .exp1{
+        grid-area: div1;
+    }
+    .exp2{
+        grid-area: div2;
+    }
+    .exp3{
+        grid-area: div3;
+    }
+    .exp4{
+        grid-area: div4;
+    }
+}
+/*EXPERIENCIA*/

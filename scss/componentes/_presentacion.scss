@@ -1,0 +1,32 @@
+/*PRESENTACION*/
+.presentacion{
+    
+    p{
+        background-color: #FFEBD6;
+        margin-top: 3%;
+        margin-left: 8%;
+        margin-right: 8%;
+        margin-bottom: 3%;
+        font-size: 120%;
+        padding: 2%;
+    }
+    
+    .tituloPresentacion{
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        color: white;
+        text-align: center;
+        font-family: Arial;
+        background-image: linear-gradient(to right, rgb(0 0 0 / .5), rgb(0 0 0 / .5)), url(../imagenes/imagenTitulo.jpg);
+    
+        h2{
+            background-color: #82449d;
+            font-size: 300%;
+            padding: 2%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    }
+}
+/*PRESENTACION*/

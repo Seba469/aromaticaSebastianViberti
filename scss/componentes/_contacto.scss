@@ -1,0 +1,108 @@
+/*CONTACTO*/
+.contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+    font-family: Arial;
+
+    .contactoDatos{
+        background: #FFEBD6;
+        padding: 5%;
+        width: 35%;
+
+        .datos{
+            padding: 3%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            color: #000000;
+
+            .titulosDatos{
+                display: flex;
+                align-items: center;
+                font-size: 200%;
+
+                h3{
+                    margin-bottom: 0;
+                    margin-left: 10%;
+                    font-size: 110%;
+                    font-weight: bolder;
+                }
+            }
+
+            p{
+                padding: 3%;
+                font-size: 100%;
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+        .contactoRedes{
+            margin-top: 3%;
+            padding-top: 3%;
+
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                list-style: none;
+                padding: 0;
+                font-size: 350%;
+
+                li{
+                    transition: all 0.5s;
+
+                    &:hover{
+                        transform: scale(1.5);
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: #000000;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.atencion{
+    display: flex;
+    flex-direction: column;
+
+    h3{
+        text-align: center;
+        font-family: Arial;
+        background-color: #82449d;
+        color: white;
+        font-size: 250%;
+        padding: 1%;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-bottom: 1%;
+    }
+
+    p{
+        text-align: center;
+        font-family: Arial;
+        background-color: #FFEBD6;
+        font-size: 110%;
+        font-weight: 500;
+        padding: 1%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 4%;
+    }
+
+    iframe{
+        width: 100%;
+        padding-bottom: 4%;
+        margin: 0;
+        background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(255,255,255,1) 13%);
+    }
+}
+
+/*CONTACTO*/

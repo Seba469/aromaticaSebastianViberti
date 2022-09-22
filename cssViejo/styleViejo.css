@@ -157,9 +157,7 @@
 }
 .conocenosImg2{
     grid-area: img2;
-    height: 300px;
-    width: 100%;
-    padding-top: 8%;
+
 }
 .conocenosImg3{
     grid-area: img3;
