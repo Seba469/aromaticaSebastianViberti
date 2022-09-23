@@ -26,6 +26,7 @@
   margin-top: 2%;
 }
 .header nav ul {
+  padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -158,11 +159,11 @@
 .conocenos h3 {
   margin-top: 4%;
   margin-bottom: 4%;
-  font-size: large;
+  font-size: 40px;
 }
 .conocenos p {
   margin-bottom: 5%;
-  font-size: medium;
+  font-size: 15px;
 }
 .conocenos .conocenosImg1 {
   grid-area: img1;
@@ -191,6 +192,7 @@
   display: flex;
   justify-content: space-around;
   padding-bottom: 1%;
+  font-family: Arial;
 }
 .productos .cartaProductos {
   margin-bottom: 5%;
@@ -198,9 +200,11 @@
 }
 .productos .cartaProductos h4 {
   text-align: center;
+  font-size: 20px;
 }
 .productos .cartaProductos p {
   text-align: center;
+  font-size: 15px;
 }
 
 /*APLICACION*/
@@ -477,6 +481,7 @@
   /*sobre nosotros*/
   /*conocenos*/
   .conocenos {
+    padding: 10%;
     justify-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 150px 1fr 150px 1fr 150px;
@@ -492,18 +497,19 @@
   }
   /*conocenos*/
   /*aplicacion*/
-  .tituloPresentacion h2 {
-    font-size: 250%;
-  }
-  .presentacion p {
-    font-size: 100%;
-  }
   .productos {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10%;
   }
-  .cartaProductos {
+  .productos .cartaProductos {
     width: 60%;
+  }
+  .productos .cartaProductos h4 {
+    font-size: 20px;
+  }
+  .productos .cartaProductos p {
+    font-size: 10px;
   }
   /*aplicacion*/
   /*experiencia*/
