@@ -56,7 +56,7 @@
   margin-left: 8%;
   margin-right: 8%;
   margin-bottom: 3%;
-  font-size: 120%;
+  font-size: 15px;
   padding: 2%;
 }
 .presentacion .tituloPresentacion {
@@ -70,7 +70,7 @@
 }
 .presentacion .tituloPresentacion h2 {
   background-color: #82449d;
-  font-size: 300%;
+  font-size: 85px;
   padding: 2%;
   margin-left: 20%;
   margin-right: 20%;
@@ -232,11 +232,11 @@
   color: white;
   padding: 1%;
   margin: 0;
-  font-size: large;
+  font-size: 40px;
 }
 .experiencia p {
   padding: 2%;
-  font-size: medium;
+  font-size: 15px;
 }
 .experiencia .exp1 {
   grid-area: div1;
@@ -275,17 +275,17 @@
 .contacto .contactoDatos .datos .titulosDatos {
   display: flex;
   align-items: center;
-  font-size: 200%;
+  font-size: 40px;
 }
 .contacto .contactoDatos .datos .titulosDatos h3 {
   margin-bottom: 0;
   margin-left: 10%;
-  font-size: 110%;
+  font-size: 35px;
   font-weight: bolder;
 }
 .contacto .contactoDatos .datos p {
   padding: 3%;
-  font-size: 100%;
+  font-size: 15px;
   text-align: center;
   font-weight: 500;
 }
@@ -299,7 +299,7 @@
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  font-size: 350%;
+  font-size: 70px;
 }
 .contacto .contactoDatos .contactoRedes ul li {
   transition: all 0.5s;
@@ -322,7 +322,7 @@
   font-family: Arial;
   background-color: #82449d;
   color: white;
-  font-size: 250%;
+  font-size: 40px;
   padding: 1%;
   margin-left: 35%;
   margin-right: 35%;
@@ -332,7 +332,7 @@
   text-align: center;
   font-family: Arial;
   background-color: #FFEBD6;
-  font-size: 110%;
+  font-size: 15px;
   font-weight: 500;
   padding: 1%;
   margin-left: 25%;
@@ -357,7 +357,7 @@
   justify-content: space-evenly;
 }
 .footer h4 {
-  font-size: 120%;
+  font-size: 20px;
 }
 .footer img {
   height: 150px;
@@ -379,7 +379,7 @@
 .footer .footerInf ul li a {
   text-decoration: none;
   color: white;
-  font-size: 90%;
+  font-size: 15px;
 }
 .footer .footerCont {
   width: 20%;
@@ -393,11 +393,11 @@
 }
 .footer .footerCont ul li a {
   text-decoration: none;
-  font-size: 90%;
+  font-size: 15px;
 }
 .footer .footerDirHor {
   width: 20% p;
-  width-font-size: 90%;
+  width-font-size: 15px;
 }
 .footer .footerRedes {
   display: flex;
@@ -419,7 +419,7 @@
 .footer .footerRedes ul li a {
   text-decoration: none;
   color: white;
-  font-size: 150%;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -496,6 +496,14 @@
     padding-right: 15%;
   }
   /*conocenos*/
+  /*presentacion*/
+  .presentacion p {
+    font-size: 12px;
+  }
+  .presentacion .tituloPresentacion h2 {
+    font-size: 50px;
+  }
+  /*presentacion*/
   /*aplicacion*/
   .productos {
     flex-direction: column;
@@ -518,41 +526,43 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "div1" "div2" "div3" "div4";
   }
+  .experiencia h3 {
+    font-size: 25px;
+  }
   .experiencia p {
-    font-size: small;
+    font-size: 12px;
   }
   /*experiencia*/
   /*contacto*/
   .contacto {
     flex-direction: column;
   }
-  .contactoFormulario {
-    display: flex;
-    margin: 0;
-    justify-content: center;
-  }
-  .contactoFormulario img {
-    height: 500px;
-    width: 90%;
-  }
-  .contactoDatos {
-    width: 90%;
-    margin-left: 3%;
+  .contacto img {
+    height: 600px;
     margin-bottom: 5%;
-    margin-top: 5%;
   }
-  .titulosDatos {
-    font-size: 150%;
-    margin-left: 20%;
+  .contacto .contactoDatos {
+    width: 80%;
+    margin-bottom: 10%;
   }
-  .titulosDatos h3 {
-    font-size: 100%;
+  .contacto .contactoDatos .datos {
+    font-size: 15px;
   }
-  .atencionHorario h3 {
-    font-size: 200%;
+  .contacto .contactoDatos .datos .titulosDatos h3 {
+    font-size: 25px;
   }
-  .atencionHorario p {
-    font-size: 100%;
+  .contacto .contactoDatos .datos p {
+    font-size: 12px;
+  }
+  .contacto .contactoRedes ul {
+    font-size: 55px;
+  }
+  .atencion h3 {
+    font-size: 25px;
+  }
+  .atencion p {
+    font-size: 12px;
+    margin-bottom: 10%;
   }
   /*contacto*/
   /*footer*/
@@ -561,17 +571,26 @@
     align-items: center;
     text-align: center;
   }
-  .footerInf {
+  .footer h4 {
+    font-size: 17px;
+  }
+  .footer img {
     display: none;
   }
-  .footerImg {
+  .footer .footerInf {
     display: none;
   }
-  .footerCont {
-    width: 60%;
+  .footer .footerCont {
+    width: 80%;
   }
-  .footerDirHor {
-    width: 60%;
+  .footer .footerCont ul li a {
+    font-size: 12px;
+  }
+  .footer .footerDirHor {
+    width: 80%;
+  }
+  .footer .footerDirHor p {
+    font-size: 12px;
   }
   /*footer*/
 }
