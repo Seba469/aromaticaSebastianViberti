@@ -1,0 +1,24 @@
+$colores:
+#82449d,
+#FFEBD6,
+#000003,
+white;
+
+$gradientes:
+/*header*/linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(196,54,244,1) 50%, rgba(131,58,180,1) 100%),
+/*sobre nosotros*/linear-gradient(90deg, rgba(130,68,157,1) 0%, rgba(46,3,64,1) 0%, rgba(42,0,60,1) 65%, rgba(130,68,157,1) 100%),
+/*sobre nosotros*/linear-gradient(90deg, rgba(130,68,157,1) 0%, rgba(46,3,64,1) 35%, rgba(42,0,60,1) 100%, rgba(130,68,157,1) 100%),
+/*conocenos*/linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(130,68,157,1) 82%),
+/*aplicacion*/linear-gradient(0deg, rgba(0,0,3,1) 5%, rgba(255,255,255,1) 30%)
+/*contacto*/linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(255,255,255,1) 13%);
+
+$size:
+12px,/*1*/
+15px,/*2*/
+20px,/*3*/
+25px,/*4*/
+30px,/*5*/
+35px,/*6*/
+40px,/*7*/
+70px,/*8*/
+80px;/*9*/

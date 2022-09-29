@@ -13,8 +13,6 @@
 /*SOBRE NOSOTROS*/
 #nosotros{
     background-color: #82449d;
-    font-family: Arial;
-    color: white;
     display: flex;
     flex-direction: column;
     padding-bottom: 3%;
@@ -22,8 +20,7 @@
     text-align: center;
 
     h2{
-        font-size: 80px;
-        text-align: center;
+        @include texto (nth($size, 8), $fuente, nth($colores, 4));
         padding-top: 2%;
         margin-bottom: 2%;
     }
@@ -36,17 +33,16 @@
     }
 
     h3{
-        font-size: 40px;
+        @include texto (nth($size, 7), $fuente, nth($colores, 4));
     }
 
     p{
-        font-size: 15px;
+        @include texto (nth($size, 2), $fuente, nth($colores, 4));
         padding: 2%;
     }
 
     .quienesSomos{
-        display: flex;
-        align-items: center;
+        @extend %disposicion;
 
         .quienesSomosTxt{
             padding: 2%;
@@ -56,8 +52,7 @@
     }
 
     .trayectoria{
-        display: flex;
-        align-items: center;
+        @extend %disposicion;
 
         .trayectoriaTxt{
             padding: 2%;
@@ -74,9 +69,7 @@
     padding-bottom: 5%;
     background: rgb(0,0,3);
     background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(130,68,157,1) 82%);
-    font-family: Arial;
     text-align: center;
-    color: white;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -92,14 +85,13 @@
     }
 
     h3{
-        margin-top: 4%;
-        margin-bottom: 4%;
-        font-size: 40px;
+        margin: 4% 0;
+        @include texto (nth($size, 5), $fuente, nth($colores, 4));
     }
 
     p{
         margin-bottom: 5%;
-        font-size: 15px;
+        @include texto (nth($size, 2), $fuente, nth($colores, 4));
     }
 
     .conocenosImg1{

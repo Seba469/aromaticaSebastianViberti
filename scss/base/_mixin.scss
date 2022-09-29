@@ -1,0 +1,5 @@
+@mixin texto ($size, $fuente, $colores) {
+    font-size: $size;
+    font-family: $fuente;
+    color: $colores;
+}
