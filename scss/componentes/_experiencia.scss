@@ -1,6 +1,5 @@
 /*EXPERIENCIA*/
 .experiencia{
-    font-family: Arial;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -23,15 +22,15 @@
 
     h3{
         background-color: #82449d;
-        color: white;
+
         padding: 1%;
         margin: 0;
-        font-size: 40px;
+        @include texto (nth($size, 5), $fuente, nth($colores, 4));
     }
 
     p{
-        padding: 2%;
-        font-size: 15px;
+        padding: 2% 5%;
+        @include texto (nth($size, 2), $fuente, nth($colores, 3));
     }
 
     .exp1{

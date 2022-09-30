@@ -38,7 +38,7 @@
 
     p{
         @include texto (nth($size, 2), $fuente, nth($colores, 4));
-        padding: 2%;
+        padding: 0 5%;
     }
 
     .quienesSomos{
@@ -64,8 +64,8 @@
 
 /*SOBRE NOSOTROS*/
 
-/*CONOCENOS*/
-.conocenos{
+/*SERVICIOS*/
+.servicios{
     padding-bottom: 5%;
     background: rgb(0,0,3);
     background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(130,68,157,1) 82%);
@@ -86,33 +86,35 @@
 
     h3{
         margin: 4% 0;
-        @include texto (nth($size, 5), $fuente, nth($colores, 4));
+        padding: 0 5%;
+        @include texto (nth($size, 4), $fuente, nth($colores, 4));
     }
 
     p{
         margin-bottom: 5%;
+        padding: 0 10%;
         @include texto (nth($size, 2), $fuente, nth($colores, 4));
     }
 
-    .conocenosImg1{
+    .serviciosImg1{
         grid-area: img1;
     }
-    .conocenosImg2{
+    .serviciosImg2{
         grid-area: img2;
     }
-    .conocenosImg3{
+    .serviciosImg3{
         grid-area: img3;
     }
-    .conocenosTxt1{
+    .serviciosTxt1{
         grid-area: txt1;
     }
-    .conocenosTxt2{
+    .serviciosTxt2{
         grid-area: txt2;
     }
-    .conocenosTxt3{
+    .serviciosTxt3{
         grid-area: txt3;
     }
 }
-/*CONOCENOS*/
+/*SERVICIOS*/
 
 /*INDEX*/
