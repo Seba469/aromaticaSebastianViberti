@@ -1,71 +1,142 @@
 /*CONTACTO*/
 .contacto{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 3%;
 
+    form{
+        background: nth($colores , 1);
+        border-radius: 5%;
+        box-shadow: 0 0 40px -10px #000;
+        padding: 3%;
+        box-sizing: border-box;
+        width: 40%;
+        margin-bottom: 5%;
+
+        legend{
+            margin: 3% 0;
+            padding-bottom: 2%;
+            @include texto (nth($size, 3), $fuente, nth($colores, 4));
+            border-bottom: 3px solid nth($colores , 4);
+        }
+
+        .col-12{
+            margin: 5%;
+            padding-top: 5%;
+            @include texto (nth($size, 2), $fuente, nth($colores, 4));
+            text-align: start;
+
+            label{
+                margin-right: 10%;
+                padding-bottom: 2%;
+            }
+
+            .col-8{
+                margin-right: 10%;
+                width: 80%;
+                box-sizing:border-box;
+                background:none;
+                outline:none;
+                resize:none;
+                border:0;
+                transition:all .3s;
+                border-bottom:2px solid #bebed2;
+                color: nth($colores , 4 );
+        
+                &:focus{
+                    border-bottom:2px solid nth($colores , 4);
+                }
+            }
+
+            textarea{
+                height: 200px;
+                border:2px solid #bebed2;
+            }
+        }
+
+        button{
+            @include texto (nth($size, 3), $fuente, nth($colores, 4));
+            background-color: nth($colores , 1);
+            border: 1px solid nth($colores , 5);
+            padding: 2%;
+            border-radius: 10%;
+            float: right;
+
+            &:hover{
+                background-color: nth($colores , 5);
+            }
+        }
+    }
+
+
     .contactoDatos{
-        background: #FFEBD6;
-        padding: 5%;
+        border: 5px inset nth($colores, 1);
+        padding: 2%;
         width: 35%;
 
         .datos{
-            padding: 3%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            padding: 2%;
+            margin-left: 10%;
 
             .titulosDatos{
                 @extend %disposicion;
-                @include texto (nth($size, 5), $fuente, nth($colores, 3));
+                @include texto (nth($size, 3), $fuente, nth($colores, 3));
 
                 h3{
                     margin: 0 0 0 10%;
-                    @include texto (nth($size, 6), $fuente, nth($colores, 3));
+                    @include texto (nth($size, 4), $fuente, nth($colores, 3));
                     font-weight: bolder;
                 }
             }
 
             p{
-                padding: 3%;
+                padding: 2%;
                 @include texto (nth($size, 2), $fuente, nth($colores, 3));
                 text-align: center;
                 font-weight: 500;
             }
         }
-        .contactoRedes{
-            margin-top: 3%;
-            padding-top: 3%;
+    }
+}
 
-            ul{
-                @extend %disposicion;
-                justify-content: space-between;
-                list-style: none;
-                padding: 0;
+.redes{
+    margin: 3% 0;
+    padding: 3% 0;
 
-                li{
-                    transition: all 0.5s;
+    ul{
+        @extend %disposicion;
+        justify-content: space-evenly;
+        list-style: none;
+        padding: 0;
+        margin-right: 3%;
+        
+        li{
 
-                    &:hover{
-                        transform: scale(1.5);
-                    }
 
-                    a{
-                        text-decoration: none;
-                        @include texto (nth($size, 8), $fuente, nth($colores, 3));
-                        cursor: pointer;
-                    }
+            a{
+                @include texto (nth($size, 8), $fuente, nth($colores, 3));
+                text-decoration: none;
+                text-align: center;
+                cursor: pointer;
+                box-shadow: 0 0 0 1px #82449d, 0 0 0 2px #2e0340, 0 0 0 5px #82449d, 0 0 0 6.5px #2e0340, 0 0 0 7px #82449d;
+                border-radius: 100%;
+                background: #FFEBD6;
+                padding: 40%;
+
+                &:hover{
+                    box-shadow: 0 0 0 1px #FFEBD6, 0 0 0 2px #82449d, 0 0 0 5px #FFEBD6, 0 0 0 6.5px #82449d, 0 0 0 7px #FFEBD6;
+                    border-radius: 100%;
+                    background: #2e0340;
+                    color: white;
                 }
             }
         }
     }
 }
 
-
 .atencion{
-    display: flex;
-    flex-direction: column;
+    background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(255,255,255,1) 15%);
     text-align: center;
 
     h3{
@@ -86,8 +157,7 @@
     iframe{
         width: 100%;
         padding-bottom: 4%;
-        margin: 0;
-        background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(255,255,255,1) 13%);
+        margin: 0 0 4% 0;
     }
 }
 
