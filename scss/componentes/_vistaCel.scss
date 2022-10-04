@@ -73,12 +73,12 @@
     }
     /*sobre nosotros*/
 
-    /*conocenos*/
-    .conocenos{
+    /*servicios*/
+    .servicios{
         padding: 10%;
         justify-items: center;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 150px 1fr 150px 1fr 150px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "img1"
         "txt1"
@@ -109,7 +109,8 @@
         .tituloPresentacion{
 
             h2{
-                font-size: 50px;
+                font-size: 40px;
+                margin: 0 15%;
             }
         }
     }
@@ -138,7 +139,7 @@
     /*experiencia*/
     .experiencia{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px 400px;
         grid-template-areas:
         "div1"
         "div2"
@@ -159,11 +160,9 @@
     .contacto{
         flex-direction: column;
 
-        img{
-            height: 600px;
-            margin-bottom: 5%;
+        form{
+            width: 80%;
         }
-
         .contactoDatos{
             width: 80%;
             margin-bottom: 10%;
@@ -183,11 +182,18 @@
                 }
             }
         }
+    }
 
-        .contactoRedes{
+    .redes{
+        ul{
+            margin-right: 10%;
             
-            ul{
-                font-size: 55px;
+            li{
+                a{
+                    font-size: 50px;
+                    padding: 40%;
+                    
+                }
             }
         }
     }

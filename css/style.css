@@ -353,7 +353,7 @@
 }
 
 .redes {
-  margin: 3% 0;
+  margin: 5% 0;
   padding: 3% 0;
 }
 .redes ul {
@@ -548,18 +548,18 @@
     background: linear-gradient(90deg, rgb(130, 68, 157) 0%, rgb(46, 3, 64) 35%, rgb(42, 0, 60) 65%, rgb(130, 68, 157) 100%);
   }
   /*sobre nosotros*/
-  /*conocenos*/
-  .conocenos {
+  /*servicios*/
+  .servicios {
     padding: 10%;
     justify-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 150px 1fr 150px 1fr 150px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "img1" "txt1" "img2" "txt2" "img3" "txt3";
   }
-  .conocenos h3 {
+  .servicios h3 {
     font-size: 25px;
   }
-  .conocenos p {
+  .servicios p {
     font-size: 10px;
     padding-left: 15%;
     padding-right: 15%;
@@ -570,7 +570,8 @@
     font-size: 12px;
   }
   .presentacion .tituloPresentacion h2 {
-    font-size: 50px;
+    font-size: 40px;
+    margin: 0 15%;
   }
   /*presentacion*/
   /*aplicacion*/
@@ -592,7 +593,7 @@
   /*experiencia*/
   .experiencia {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px;
     grid-template-areas: "div1" "div2" "div3" "div4";
   }
   .experiencia h3 {
@@ -606,9 +607,8 @@
   .contacto {
     flex-direction: column;
   }
-  .contacto img {
-    height: 600px;
-    margin-bottom: 5%;
+  .contacto form {
+    width: 80%;
   }
   .contacto .contactoDatos {
     width: 80%;
@@ -623,8 +623,12 @@
   .contacto .contactoDatos .datos p {
     font-size: 12px;
   }
-  .contacto .contactoRedes ul {
-    font-size: 55px;
+  .redes ul {
+    margin-right: 10%;
+  }
+  .redes ul li a {
+    font-size: 50px;
+    padding: 40%;
   }
   .atencion h3 {
     font-size: 25px;
