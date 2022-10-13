@@ -4,20 +4,42 @@
 .carouselInicio{
     margin-bottom: 3%;
     
-    img{
-        height: 550px;
+    h1{
+        @include texto (nth($size, 8), $fuente, nth($colores, 5));
+        text-shadow: 0px 0px 15px nth($colores , 5); 
     }
+
+    p{
+        @include texto (nth($size, 3), $fuente, nth($colores, 3));
+    }
+
+    .carousel-item{
+        width: 100%;
+        padding: 150px 0; 
+        text-align: center;
+        
+    }
+
+    .carouselFondo1{
+        background-image: linear-gradient(to right, rgb(255 255 255 / .25), rgb(255 255 255 / .25)), url(../imagenes/carousel1.jpg);
+    }
+    .carouselFondo2{
+        background-image: linear-gradient(to right, rgb(255 255 255 / .25), rgb(255 255 255 / .25)), url(../imagenes/carousel2.jpg);
+    }
+    .carouselFondo3{
+        background-image: linear-gradient(to right, rgb(255 255 255 / .25), rgb(255 255 255 / .25)), url(../imagenes/carousel3.jpg);
+    }
+
 }
 /*CAROUSEL*/
 
 /*SOBRE NOSOTROS*/
 #nosotros{
-    background-color: #82449d;
+    background-color: nth($colores , 1);
     display: flex;
     flex-direction: column;
     padding-bottom: 3%;
-    overflow: hidden;
-    text-align: center;
+    @extend %disposicionNosotrosServicios;
 
     h2{
         @include texto (nth($size, 8), $fuente, nth($colores, 4));
@@ -67,10 +89,8 @@
 /*SERVICIOS*/
 .servicios{
     padding-bottom: 5%;
-    background: rgb(0,0,3);
     background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(130,68,157,1) 82%);
-    text-align: center;
-    overflow: hidden;
+    @extend %disposicionNosotrosServicios;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;

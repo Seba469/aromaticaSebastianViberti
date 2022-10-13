@@ -7,7 +7,6 @@
 .header{
     @extend %disposicion;
     flex-direction: column;
-    background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(196,54,244,1) 50%, rgba(131,58,180,1) 100%);
     margin-bottom: 3%;
     
@@ -29,16 +28,16 @@
             li{
                 list-style: none;
                 cursor: pointer;
-                transition: all 0.5s;
-
-                &:hover{
-                    transform: scale(1.5);
-                }
 
                 a{
                     padding: 5%;
                     text-decoration: none;
                     @include texto (nth($size, 2), $fuente, nth($colores, 4));
+                    transition: all 0.25s;
+
+                    &:hover{
+                        color: nth($colores , 5 );
+                    }
                 }
             }
         }

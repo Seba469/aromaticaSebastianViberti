@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+.servicios, #nosotros {
+  text-align: center;
+  overflow: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +17,6 @@
 /* HEADER */
 .header {
   flex-direction: column;
-  background: rgb(131, 58, 180);
   background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(196, 54, 244) 50%, rgb(131, 58, 180) 100%);
   margin-bottom: 3%;
 }
@@ -33,10 +37,6 @@
 .header nav ul li {
   list-style: none;
   cursor: pointer;
-  transition: all 0.5s;
-}
-.header nav ul li:hover {
-  transform: scale(1.5);
 }
 .header nav ul li a {
   padding: 5%;
@@ -44,6 +44,10 @@
   font-size: 15px;
   font-family: Arial;
   color: white;
+  transition: all 0.25s;
+}
+.header nav ul li a:hover {
+  color: #2e0340;
 }
 
 /*HEADER*/
@@ -61,7 +65,7 @@
   width: 100%;
   padding: 150px 0;
   text-align: center;
-  background-image: linear-gradient(to right, rgba(46, 3, 64, 0.5), rgba(46, 3, 64, 0.5)), url(../imagenes/presentacion5.png);
+  background-image: linear-gradient(to right, rgba(46, 3, 64, 0.5), rgba(46, 3, 64, 0.5)), url(../imagenes/presentacion.png);
 }
 .presentacion .tituloPresentacion h2 {
   font-size: 80px;
@@ -82,8 +86,30 @@
 .carouselInicio {
   margin-bottom: 3%;
 }
-.carouselInicio img {
-  height: 550px;
+.carouselInicio h1 {
+  font-size: 70px;
+  font-family: Arial;
+  color: #2e0340;
+  text-shadow: 0px 0px 15px #2e0340;
+}
+.carouselInicio p {
+  font-size: 20px;
+  font-family: Arial;
+  color: #000003;
+}
+.carouselInicio .carousel-item {
+  width: 100%;
+  padding: 150px 0;
+  text-align: center;
+}
+.carouselInicio .carouselFondo1 {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../imagenes/carousel1.jpg);
+}
+.carouselInicio .carouselFondo2 {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../imagenes/carousel2.jpg);
+}
+.carouselInicio .carouselFondo3 {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url(../imagenes/carousel3.jpg);
 }
 
 /*CAROUSEL*/
@@ -93,8 +119,6 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 3%;
-  overflow: hidden;
-  text-align: center;
 }
 #nosotros h2 {
   font-size: 70px;
@@ -135,10 +159,7 @@
 /*SERVICIOS*/
 .servicios {
   padding-bottom: 5%;
-  background: rgb(0, 0, 3);
   background: linear-gradient(0deg, rgb(0, 0, 3) 0%, rgb(130, 68, 157) 82%);
-  text-align: center;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;

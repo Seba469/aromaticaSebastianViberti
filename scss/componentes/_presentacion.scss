@@ -13,7 +13,7 @@
         width: 100%;
         padding: 150px 0; 
         text-align: center;
-        background-image: linear-gradient(to right, rgb(46 3 64 / .5), rgb(46 3 64 / .5)), url(../imagenes/presentacion5.png);
+        background-image: linear-gradient(to right, rgb(46 3 64 / .5), rgb(46 3 64 / .5)), url(../imagenes/presentacion.png);
     
         h2{
             @include texto (nth($size, 9), $fuente, nth($colores, 4));
