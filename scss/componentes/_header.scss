@@ -4,7 +4,7 @@
 }
 
 /* HEADER */
-.header{
+header{
     @extend %disposicion;
     flex-direction: column;
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(196,54,244,1) 50%, rgba(131,58,180,1) 100%);
@@ -37,6 +37,7 @@
 
                     &:hover{
                         color: nth($colores , 5 );
+                        text-shadow: 0px 0px 5px nth($colores , 5); 
                     }
                 }
             }

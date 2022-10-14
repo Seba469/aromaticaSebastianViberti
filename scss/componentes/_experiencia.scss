@@ -1,36 +1,39 @@
 /*EXPERIENCIA*/
 .experiencia{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    grid-template-columns: 550px 550px;
+    grid-template-rows: 500px 500px;
     grid-template-areas: 
     "div1 div2"
     "div3 div4";
+    background: linear-gradient(0deg, rgba(0,0,3,1) 0%, rgba(255,255,255,1) 10%);;
+    
 
-    .expFondo{
-        background-color: #FFEBD6;
+    .expDiseño{
+        background-color: nth($colores, 2);
         margin: 5%;
+        padding-bottom: 10%;
         text-align: center;
-        border: #82449d solid 3px;
-    }
+        box-shadow: 0px 0px 20px nth($colores, 5);
+    
+        img{
+            width: 100%;
+            height: 50%;
+            border-bottom: 3px solid nth($colores, 5);
+        }
 
-    img{
-        padding: 2%;
-        width: 50%;
-        height: 50%;
-    }
+        h3{
+            background-color: nth($colores, 1);
+            padding: 1%;
+            margin: 0;
+            @include texto (nth($size, 5), $fuente, nth($colores, 4));
+        }
 
-    h3{
-        background-color: #82449d;
-
-        padding: 1%;
-        margin: 0;
-        @include texto (nth($size, 5), $fuente, nth($colores, 4));
-    }
-
-    p{
-        padding: 2% 5%;
-        @include texto (nth($size, 2), $fuente, nth($colores, 3));
+        p{            
+            padding: 3% 5% 0% 5%;
+            @include texto (nth($size, 2), $fuente, nth($colores, 3));
+        }
     }
 
     .exp1{

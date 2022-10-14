@@ -1,5 +1,6 @@
+@charset "UTF-8";
 /*9*/
-.redes ul, .contacto .contactoDatos .datos .titulosDatos, #nosotros .trayectoria, #nosotros .quienesSomos, .header {
+.redes ul, .contacto .contactoDatos .datos .titulosDatos, #nosotros .trayectoria, #nosotros .quienesSomos, header {
   display: flex;
   align-items: center;
 }
@@ -15,30 +16,30 @@
 }
 
 /* HEADER */
-.header {
+header {
   flex-direction: column;
   background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(196, 54, 244) 50%, rgb(131, 58, 180) 100%);
   margin-bottom: 3%;
 }
-.header img {
+header img {
   height: 50%;
   width: 25%;
   margin: 2% 0;
 }
-.header nav {
+header nav {
   width: 80%;
   margin: 2% 10%;
 }
-.header nav ul {
+header nav ul {
   display: flex;
   justify-content: space-around;
   padding: 0;
 }
-.header nav ul li {
+header nav ul li {
   list-style: none;
   cursor: pointer;
 }
-.header nav ul li a {
+header nav ul li a {
   padding: 5%;
   text-decoration: none;
   font-size: 15px;
@@ -46,8 +47,9 @@
   color: white;
   transition: all 0.25s;
 }
-.header nav ul li a:hover {
+header nav ul li a:hover {
   color: #2e0340;
+  text-shadow: 0px 0px 5px #2e0340;
 }
 
 /*HEADER*/
@@ -232,22 +234,25 @@
 /*EXPERIENCIA*/
 .experiencia {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  grid-template-columns: 550px 550px;
+  grid-template-rows: 500px 500px;
   grid-template-areas: "div1 div2" "div3 div4";
+  background: linear-gradient(0deg, rgb(0, 0, 3) 0%, rgb(255, 255, 255) 10%);
 }
-.experiencia .expFondo {
+.experiencia .expDiseño {
   background-color: #FFEBD6;
   margin: 5%;
+  padding-bottom: 10%;
   text-align: center;
-  border: #82449d solid 3px;
+  box-shadow: 0px 0px 20px #2e0340;
 }
-.experiencia img {
-  padding: 2%;
-  width: 50%;
+.experiencia .expDiseño img {
+  width: 100%;
   height: 50%;
+  border-bottom: 3px solid #2e0340;
 }
-.experiencia h3 {
+.experiencia .expDiseño h3 {
   background-color: #82449d;
   padding: 1%;
   margin: 0;
@@ -255,8 +260,8 @@
   font-family: Arial;
   color: white;
 }
-.experiencia p {
-  padding: 2% 5%;
+.experiencia .expDiseño p {
+  padding: 3% 5% 0% 5%;
   font-size: 15px;
   font-family: Arial;
   color: #000003;
@@ -345,6 +350,7 @@
 }
 .contacto .contactoDatos {
   border: 5px inset #82449d;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../imagenes/fondoContacto.jpg);
   padding: 2%;
   width: 35%;
 }
@@ -390,13 +396,13 @@
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 0 0 1px #82449d, 0 0 0 2px #2e0340, 0 0 0 5px #82449d, 0 0 0 6.5px #2e0340, 0 0 0 7px #82449d;
+  box-shadow: 0 0 0 1px #2e0340, 0 0 0 5px #82449d, 0 0 0 6.5px #2e0340, 0 0 0 7px #82449d;
   border-radius: 100%;
   background: #FFEBD6;
   padding: 40%;
 }
 .redes ul li a:hover {
-  box-shadow: 0 0 0 1px #FFEBD6, 0 0 0 2px #82449d, 0 0 0 5px #FFEBD6, 0 0 0 6.5px #82449d, 0 0 0 7px #FFEBD6;
+  box-shadow: 0 0 0 1px #82449d, 0 0 0 5px #FFEBD6, 0 0 0 6.5px #82449d, 0 0 0 7px #FFEBD6;
   border-radius: 100%;
   background: #2e0340;
   color: white;
@@ -449,31 +455,32 @@
   width: 10%;
 }
 .footer .footerInf ul {
-  list-style: none;
   padding: 0;
 }
 .footer .footerInf ul li {
+  list-style: none;
   padding: 1%;
-  transition: all 0.5;
-}
-.footer .footerInf ul li:hover {
-  transform: scale(1.25);
+  cursor: pointer;
 }
 .footer .footerInf ul li a {
   text-decoration: none;
   font-size: 15px;
   font-family: Arial;
   color: white;
+  transition: all 0.5;
+}
+.footer .footerInf ul li a:hover {
+  color: grey;
 }
 .footer .footerCont {
   width: 20%;
 }
 .footer .footerCont ul {
-  list-style: none;
   padding: 0;
 }
 .footer .footerCont ul li {
   padding: 1%;
+  list-style: none;
 }
 .footer .footerCont ul li a {
   text-decoration: none;
@@ -500,17 +507,18 @@
   padding: 0;
 }
 .footer .footerRedes ul li {
-  transition: all 0, 5;
-}
-.footer .footerRedes ul li:hover {
-  transform: scale(1.5);
+  list-style: none;
+  cursor: pointer;
 }
 .footer .footerRedes ul li a {
   text-decoration: none;
   font-size: 25px;
   font-family: Arial;
   color: white;
-  cursor: pointer;
+  transition: all 0, 5;
+}
+.footer .footerRedes ul li a:hover {
+  color: grey;
 }
 
 /*FOOTER*/
